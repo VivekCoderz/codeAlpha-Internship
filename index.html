@@ -2,49 +2,230 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
 </head>
-<body>   
-    <div class="dp">
-        <!-- <img src="cal_2.jpg" alt="" id="change"> -->   
-        <div id="change">
-            <div class="boll" id="boll"></div>
+<body>
+    <header>
+        <nav>
+            <i class="fa-solid fa-music"></i>
+            <i class="fa-solid fa-house"></i>
+            <div class="input-field">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="What do you want to play?">
+            </div>
+        </nav>
+        <nav>
+            <a href="">Premium</a>
+            <a href="">Support</a>
+            <a href="">Download</a>
+        </nav>
+    </header>
+    <main>
+        <p>Popular artists</p> 
+        <div class="song-list">
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.UeTvJxhedVA4afTiSCsT2QHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <p>Jubin Nautiyal</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.wIMCHA_KrqhaD7_2R3mquAHaJ4?w=153&h=204&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <p> A.R Rahman</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://img.discogs.com/vGsioytB0N4XeMxmyK1yYQQRT5o=/525x515/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-3895034-1517157761-2697.jpeg.jpg" alt="">
+                    <p>Pritam</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.uFczUffX9pxVTHx55w_H-QHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <p>Sachin-Jigar</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.YDCvg0YYwCY9ouzjuGh_cwHaEz?w=282&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <p>Vishal-Sherkhar</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.PTcSxOYmH7I3dlt-seLwAwHaEK?rs=1&pid=ImgDetMain" alt="">
+                    <p>Atif Aslam</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.CGo9zD5iNW1qgfxmK0ZI7QHaG_?rs=1&pid=ImgDetMain" alt="">
+                    <p>Udit Narayan</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://th.bing.com/th/id/OIP.kDmxf9f-TxIpiZEOAWGOHAHaEa?rs=1&pid=ImgDetMain" alt="">
+                    <p>Yo Yo Honey Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist">
+                    <img src="https://wallpapercave.com/wp/wp6627488.jpg" alt="">
+                    <p>Diljit Dosanjh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
         </div>
-    </div>
-    <div class="calculater">
-        <input type="text"id="display" disabled>
-        <div class="buttons">
-            <button class="operator" id="clear">AC</button>
-            <button class="operator" id="modulas">%</button>
-            <button class="operator" id="backspace">X</button>
-            <button class="operator" id="divide">/</button>
-            <button class="number" id="7">7</button>
-            <button class="number" id="8">8</button>
-            <button class="number" id="9">9</button>
-            <button class="operator" id="multiply">*</button>
-            <button class="number" id="4">4</button>
-            <button class="number" id="5">5</button>
-            <button class="number" id="6">6</button>
-            <button class="operator" id="subtract">-</button>
-            <button class="number" id="1">1</button>
-            <button class="number" id="2">2</button>
-            <button class="number" id="3">3</button>
-            <button class="operator" id="add">+</button>
-            <button class="operator" id="double_zero">00</button>
-            <button class="number" id="0">0</button>
-            <button class="operator" id="decimal">.</button>
-            <button class="operator" id="equals">=</button>
+    </main>
+    <main>
+        <p>Popular Songs</p> 
+        <div class="song-list">
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
+            <section>
+                <div class="artist popular-song">
+                    <img src="https://th.bing.com/th/id/OIP.uCllvIDf-CRlkRO0ozkI7QHaGP?w=215&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    <div class="play"></div>
+                    <p>Arjit Singh</p>
+                    <p>Artist</p>
+                </div>
+            </section>
         </div>
-    </div>
-    <section>
-        <button>History</button>
-        <button>Memory</button>
-        <hr>
-        <p>There's nothing saved in memory.</p>
-        
-    </section>
-    <script src="logic.js"></script>                                                
+    </main>
+    <footer>
+        <div>    
+            <a href="">Company</a>
+            <a href="">About</a>
+            <a href="">Jobs</a>
+            <a href="">For the Record</a>
+            <a href="">Communities</a>
+        </div>
+        <div>
+            <a href="">For Artists</a>
+            <a href="">Developers</a>
+            <a href="">Advertising</a>
+            <a href="">Investors</a>
+            <a href="">Vendors</a>
+            <a href="">Useful links</a>
+        </div>
+        <div>
+            <a href="">Support</a>
+            <a href="">Free Mobile App</a>
+            <a href="">Spotify Plans</a>
+        </div>
+        <div>
+            <a href="">Premium Individual</a>
+            <a href="">Premium Duo</a>
+            <a href="">Premium Family</a>
+            <a href="">Premium Student</a>
+            <a href="">Spotify Free</a>
+        </div>
+    </footer>
 </body>
 </html>
